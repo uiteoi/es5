@@ -10,6 +10,8 @@ Currently only the following new methods are implemented:
 
 <pre><code>Object.create( proto ) // does not support second parameter
 
+Function.prototype.bind( thisArg [, arg1[, arg2[, ...]]] )
+
 Array.prototype.indexOf    ( searchElement [, fromIndex ] )
 Array.prototype.lastIndexOf( searchElement [, fromIndex ] )
 Array.prototype.forEach    ( callback [, thisArg ] )
@@ -22,5 +24,6 @@ Array.prototype.reduceRight( callback [, initialValue ] )
 </code></pre>
 
 For more information on the above methods, and implementation, check:
-* the "Anotated ECMAScript standard on github":http://es5.github.com/#x15.4.4.14
 * "Mozilla MDN Object.create()":https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/create
+* "Mozilla MDN Function.bind()":https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/bind
+* the "Anotated ECMAScript standard on github":http://es5.github.com/#x15.4.4.14
