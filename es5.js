@@ -6,15 +6,21 @@
 //
 
 Array.prototype.indexOf || ( Array.prototype.indexOf = function( v, i ) {
-  if ( ( var l = this.length ) === 0 ) return -1;
-  if ( i === undefined ) i = 0 else if( i < 0 && ( i += l ) < 0 ) i = 0;
-  i -= 1 while( ++i < l ) if ( this[ i ] === v ) return i;
+  var l = this.length; if ( l === 0 ) return -1;
+  if ( i === undefined ) {
+    i = 0
+  } else if( i < 0 && ( i += l ) < 0 ) i = 0;
+  i -= 1; while( ++i < l ) if ( this[ i ] === v ) return i;
   return -1;
 } );
 
 Array.prototype.lastIndexOf || ( Array.prototype.lastIndexOf = function( v, i ) {
-  if ( ( var l = this.length ) === 0 ) return -1;
-  if ( i === undefined ) i = l - 1 else if( i < 0 && ( i += l ) < 0 ) return -1 else if ( i >= l ) i = l - 1;
+  var l = this.length; if ( l === 0 ) return -1;
+  if ( i === undefined ) {
+    i = l - 1
+  } else if( i < 0 && ( i += l ) < 0 ) {
+    return -1
+  } else if ( i >= l ) i = l - 1;
   i += 1; while( --i >= 0 && this[ i ] !== v );
   return i;
 } );
