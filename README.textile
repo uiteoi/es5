@@ -1,16 +1,14 @@
 h1. Introduction
 
-'es5.js' is a set of ECMAScript 5 compatibility methods.
+'es5.js' is a set of ECMAScript (aka JavaScript) 5 compatibility methods, allowing to use some ECMAScript on all web browsers.
 
-The methods are defined only if the native methods are not available. This means that on web browsers
-that implement these methods natively, the native methods will be used instead.
+The methods are defined only if the native methods are not available. This means that on web browsers that implement these methods, native methods will be used instead, hence providing optimal performance.
 
 h1. Implemented Methods
 
 Currently only Array.prototype new methods are implemented:
 
-<pre><code>
-Array.prototype.indexOf    ( searchElement [, fromIndex ] )
+<pre><code>Array.prototype.indexOf    ( searchElement [, fromIndex ] )
 Array.prototype.lastIndexOf( searchElement [, fromIndex ] )
 Array.prototype.forEach    ( callback [, thisArg ] )
 Array.prototype.every      ( callback [, thisArg ] )
@@ -21,5 +19,5 @@ Array.prototype.reduce     ( callback [, initialValue ] )
 Array.prototype.reduceRight( callback [, initialValue ] )
 </code></pre>
 
-For more information on the above methods, check:
+For more information on the above methods, check the anotated ECMAScript standard on github:
 http://es5.github.com/#x15.4.4.14
