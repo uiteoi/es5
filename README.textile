@@ -8,9 +8,9 @@ h1. Implemented Methods
 
 Currently only the following new methods are implemented:
 
-<pre><code>Array.prototype.indexOf    ( searchElement [, fromIndex ] )
-Object.create( proto ) // does not support second parameter
+<pre><code>Object.create( proto ) // does not support second parameter
 
+Array.prototype.indexOf    ( searchElement [, fromIndex ] )
 Array.prototype.lastIndexOf( searchElement [, fromIndex ] )
 Array.prototype.forEach    ( callback [, thisArg ] )
 Array.prototype.every      ( callback [, thisArg ] )
