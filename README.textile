@@ -19,5 +19,4 @@ Array.prototype.reduce     ( callback [, initialValue ] )
 Array.prototype.reduceRight( callback [, initialValue ] )
 </code></pre>
 
-For more information on the above methods, check the anotated ECMAScript standard on github:
-http://es5.github.com/#x15.4.4.14
+For more information on the above methods, check the "Anotated ECMAScript standard on github":http://es5.github.com/#x15.4.4.14
